@@ -6,6 +6,9 @@ This repo is public so that other people can pick through them, potentially use 
 The scripts are organised on a per-service basis: one folder per service.
 There's a docstring or comment at the top of each script that explains what it's meant to do, and a bit of the context.
 
+If you're looking for reusable code, look at the `common.py` in each directory.
+This contains functions that are reused by multiple scripts.
+
 ## Usage
 
 Download the script from the repo, run it locally.
