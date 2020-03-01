@@ -15,13 +15,7 @@ import uuid
 import boto3
 import humanize
 
-
-def get_buckets(s3_client):
-    """
-    Generates every bucket in this AWS account.
-    """
-    resp = s3_client.list_buckets()
-    yield from resp["Buckets"]
+from common import get_buckets
 
 
 def get_sizes_for_bucket(cloudwatch_client, *, bucket_name):
